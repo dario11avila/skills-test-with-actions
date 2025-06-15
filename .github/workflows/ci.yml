@@ -42,9 +42,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
-      # Runs markdown lint again (non-redundant if different context or parameters)
-      - name: Run markdown lint (frail mode)
-        run: |
-          npm install remark-cli remark-preset-lint-consistent
-          npx remark . --use remark-preset-lint-consistent --frail
